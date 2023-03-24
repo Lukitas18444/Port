@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1{
+    font-size: 5em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.menu{
+    height: 75vh;
+
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 90vh;
+}
+.img{
+    width: 25%;
+    height: 500px;
+    border: 1px solid black;
+}
+.imagen1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(0 0 0 / 0), rgb(0 0 0 /0)),
+    url("https://i0.wp.com/belgranoherald.com/wp-content/uploads/2017/10/Pink.jpg");
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+}
+.text{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.8rem;
+    visibility: hidden;
+}
+.imagen1:hover{
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 /.5)),
+    url("https://i0.wp.com/belgranoherald.com/wp-content/uploads/2017/10/Pink.jpg");
+    box-shadow: 10px 5px 8px 2px #ff92c5;
+    transition: all 1s;
+}
+.text:hover{
+    visibility: inherit;
+}
+
