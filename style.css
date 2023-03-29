@@ -3,12 +3,49 @@
     padding: 0;
     list-style: none;
 }
-h1{
-    font-size: 5em;
-    margin: auto;
+.nav{
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+.heart{
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    transform: rotate(-45deg);
+    animation: pulse 1s infinite;
+}
+.heart::before,
+.heart::after{
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+}
+.heart::before{
+    top: -15px;
+}
+.heart::after{
+    left: 15px;
+}
+@keyframes pulse{
+    75%{
+        transform: 
+        rotate(-45deg)
+        scale(1.1);
+    }
+}
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    list-style: none;
+    text-decoration: none;
 }
 .menu{
     height: 75vh;
@@ -19,14 +56,13 @@ h1{
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    height: 90vh;
 }
 .img{
     width: 25%;
     height: 500px;
     border: 1px solid black;
 }
-.imagen1{
+.imagen-retrato{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,21 +71,102 @@ h1{
     background-position: center center;
     background-size: cover;
     cursor: pointer;
+    box-shadow: 5px 2px 15px 2px #ff92c5;
+}
+.imagen-producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(0 0 0 / 0), rgb(0 0 0 /0)),
+    url("https://gmotupper.files.wordpress.com/2017/06/daria4.jpg");
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 5px 2px 15px 2px #ff92c5;
+}
+.imagen-eventos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(0 0 0 / 0), rgb(0 0 0 /0)),
+    url("https://media.admagazine.com/photos/618a5e38b94700461d621050/4:3/w_3168,h_2376,c_limit/92904.jpg");
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 5px 2px 15px 2px #ff92c5;
+}
+.imagen-retrato:hover{
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 /.5)),
+    url("https://i0.wp.com/belgranoherald.com/wp-content/uploads/2017/10/Pink.jpg");
+    box-shadow: 10px 5px 8px 2px #ff92c5;
+    width: 30%;
+    transition: all 1s;
+}
+.imagen-producto:hover{
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 /.5)),
+    url("https://gmotupper.files.wordpress.com/2017/06/daria4.jpg");
+    box-shadow: 10px 5px 8px 2px #ff92c5;
+    width: 30%;
+    transition: all 1s;
+}
+.imagen-eventos:hover{
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 /.5)),
+    url("https://media.admagazine.com/photos/618a5e38b94700461d621050/4:3/w_3168,h_2376,c_limit/92904.jpg");
+    box-shadow: 10px 5px 8px 2px #ff92c5;
+    width: 30%;
+    transition: all 1s;
+}
+.imagen-retrato:not(:hover){
+    width: 25%;
+    transition: all 1s;
+}
+.imagen-producto:not(:hover){
+    width: 25%;
+    transition: all 1s;
+}
+.imagen-eventos:not(:hover){
+    width: 25%;
+    transition: all 1s;
 }
 .text{
     text-align: center;
     color: aliceblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.8rem;
-    visibility: hidden;
-}
-.imagen1:hover{
-    background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 /.5)),
-    url("https://i0.wp.com/belgranoherald.com/wp-content/uploads/2017/10/Pink.jpg");
-    box-shadow: 10px 5px 8px 2px #ff92c5;
-    transition: all 1s;
-}
-.text:hover{
-    visibility: inherit;
+    opacity:0;
 }
 
+.parrafo{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    color:blue;
+}
+
+.trabajo-retrato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descripcion{
+    width: 50%;
+    isolation: isolate;
+}
+
+.carousel-inner img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    text-align: center;
+}
+.carousel{
+    width: 500px;
+    height: 500px;
+}
+.titulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
