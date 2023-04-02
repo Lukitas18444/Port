@@ -1,13 +1,31 @@
-const button = document.querySelector(".imagen1")
+const imagenRetrato = document.querySelector(".imagen-retrato")
+const imagenProducto = document.querySelector(".imagen-producto")
+const imagenEventos = document.querySelector(".imagen-eventos")
 
-button.addEventListener("mouseover", (e)=>{
-    const text = document.querySelector(".text");
-    text.textContent = "RETRATOS";
-    text.style.color = "red";
-    text.style.opacity = 1;
+imagenRetrato.addEventListener("mouseover", (e)=>{
+    const buttonRetrato = document.getElementById("button-retrato");
+    buttonRetrato.style.opacity = 1;
     console.log("esto funciona")
 })
-button.addEventListener("mouseout",(e) =>{
-    const text = document.querySelector(".text");
-    text.style.opacity = 0;
+imagenRetrato.addEventListener("mouseout",(e) =>{
+    const buttonRetrato = document.getElementById("button-retrato");
+    buttonRetrato.style.opacity = 0;
+})
+imagenProducto.addEventListener("mouseover", (e)=>{
+    const buttonProducto = document.getElementById("button-producto");
+    buttonProducto.style.opacity = 1;
+    console.log("esto funciona")
+})
+imagenProducto.addEventListener("mouseout",(e) =>{
+    const buttonProducto = document.getElementById("button-producto");
+    buttonProducto.style.opacity = 0;
+})
+imagenEventos.addEventListener("mouseover", (e)=>{
+    const buttonEventos = document.getElementById("button-eventos");
+    buttonEventos.style.opacity = 1;
+    console.log("esto funciona")
+})
+imagenEventos.addEventListener("mouseout",(e) =>{
+    const buttonEventos = document.getElementById("button-eventos");
+    buttonEventos.style.opacity = 0;
 })
