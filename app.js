@@ -29,3 +29,5 @@ imagenEventos.addEventListener("mouseout",(e) =>{
     const buttonEventos = document.getElementById("button-eventos");
     buttonEventos.style.opacity = 0;
 })
+
+console.log("Este es un mensaje nuevo")
