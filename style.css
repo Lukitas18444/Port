@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
 }
 body{
-    background-image: linear-gradient(to right, #ff0cae 0%, #ff3dbe 15%,  #ff7ed4 50%,  #ff9edf 75%, #ffbbe8 100%);
+    background: linear-gradient(to right, #ff0cae 0%, #ff3dbe 15%,  #ff7ed4 50%,  #ff9edf 75%, #ffbbe8 100%);
 }
 .nav{
     display: flex;
@@ -209,3 +209,44 @@ a{
 footer p{
     margin-left: 10px;
 }*/
+
+@media screen and (min-width:350px){
+    body{
+        background: #7a5e5e;
+    }
+    .container{
+    flex-direction: column;
+    gap: 15px;
+    }
+    .img{
+    width: 75%;
+    height: 125px;
+    }
+    .trabajos{
+        display: flex;
+        flex-direction: column;
+    }
+    .trabajo-retrato,
+    .trabajo-eventos,
+    .trabajo-producto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .carousel{
+    width: 20rem;
+    height: 20rem;
+    }
+    .carousel-inner img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    text-align: center; 
+    }
+    .descripcion{
+        width: 100%;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}

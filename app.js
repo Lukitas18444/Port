@@ -22,7 +22,7 @@ imagenRetrato.addEventListener("mouseout", (e)=>{
     retrato.classList.remove("shake-vertical")
 })
 imagenProducto.addEventListener("mouseover", (e)=>{
-    productos.textContent = "FOTO-PRODUCTO";
+    productos.textContent = "FOTOPRODUCTO";
     productos.classList.add("retratosBoton");
     productos.classList.add("shake-vertical")
     console.log("Esto funciona");
@@ -33,7 +33,7 @@ imagenProducto.addEventListener("mouseout", (e)=>{
 })
 
 imagenEventos.addEventListener("mouseover", (e)=>{
-    eventos.textContent = "FOTO-EVENTOS";
+    eventos.textContent = "EVENTOS";
     eventos.classList.add("retratosBoton");
     eventos.classList.add("shake-vertical")
     console.log("Esto funciona");
