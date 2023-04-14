@@ -1,9 +1,18 @@
+window.sr = ScrollReveal();
+    sr.reveal('.container', {
+        duration:1000,
+        origin:'top',
+        distance: '-100px',
+        reset:true
+    });
+    sr.reveal('.trabajos', {
+        duration:2000,
+        origin:'bottom',
+        distance: '-50px',
+        reset:true
+    });
 
-/*imagenRetrato.addEventListener("mouseover", (e)=>{
-    const buttonRetrato = document.getElementById("button-retrato");
-    buttonRetrato.style.opacity = 1;
-    console.log("esto funciona")
-})*/
+
 const imagenRetrato = document.querySelector(".imagen-retrato")
 const imagenProducto = document.querySelector(".imagen-producto")
 const imagenEventos = document.querySelector(".imagen-eventos")
@@ -42,4 +51,5 @@ imagenEventos.addEventListener("mouseout", (e)=>{
     eventos.textContent = "";
     eventos.classList.remove("shake-vertical")
 })
+
 
